@@ -1,1 +1,29 @@
 # TNV-IV-ED-FinalProject
+
+
+### 1)Install nodejs, mamp and visual code studio
+
+### 2)Database configuration: open mamp
+			  click "open webStartPage"
+			  open phpMyAdmin
+			  new database "thenetfish"
+			  import tab, select "thenetfish.sql" in root folder
+			  "go"
+
+### 3)Open visual code studio
+### 4)New terminal, run "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser"
+### 5)File -> Open folder "frontend"
+### 6)Run "npm install" in terminal
+### 7)Run "ng-serve"
+
+### 8)File -> new window in visual studio code, File -> Open folder, select "backend"
+### 9)Run "npm install", then "npm start" to run the backend
+
+### 10)go to url "localhost:4200" in your browser
+
+
+### how to run next times:
+
+### 1)Open two visual code studio windows
+### 2)Open backend and frontend folders
+### 3)run "ng serve" for frontend, "npm start" for backend in terminal
