@@ -7,7 +7,7 @@
 	* click "open webStartPage"
 	* open phpMyAdmin
 	* new database "thenetfish"
-	* import tab, select "thenetfish.sql" in root folder
+	* import tab, select "webservice.sql" in root folder
 	* "go"
 
 3. Open visual code studio
