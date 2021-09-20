@@ -17,8 +17,8 @@ export class DashboardComponent implements OnInit {
     this.getEntries()
   }
 
-  public covidData: MovieData [];
-  movies;
+  public movies: MovieData [];
+  ;
 
   getEntries(){
     this.dataService.getData().subscribe( (response : any) => {
