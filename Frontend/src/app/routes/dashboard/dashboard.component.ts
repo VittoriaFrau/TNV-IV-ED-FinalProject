@@ -18,7 +18,6 @@ export class DashboardComponent implements OnInit {
   }
 
   public movies: MovieData [];
-  ;
 
   getEntries(){
     this.dataService.getData().subscribe( (response : any) => {

@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 import { MovieData } from 'src/app/models/data.model';
 import { NgForm } from '@angular/forms'
+import { threadId } from 'worker_threads';
 
 @Component({
   selector: 'app-edit',
@@ -17,7 +18,7 @@ export class EditComponent implements OnInit {
 
   genres = ['Horror','Adventure','Comedy','Fantasy','Crime','Romance'];
   ratedOptions = ['yes', 'no'];
-  ratedOption: string;
+  ratedOptionSelected: string;
 
   ngOnInit(): void {
     const id = this.route.snapshot.params['id'];
@@ -27,12 +28,19 @@ export class EditComponent implements OnInit {
   fetchEntry(id){
     this.dataService.getEntry(id).subscribe( (res: any ) => {
       this.dataEntry = res;
+      
+      console.log(this.dataEntry)
+      if(this.dataEntry.rated){
+        this.ratedOptionSelected="yes";
+      }
+      else this.ratedOptionSelected="no"
     })
+    
   }
  
   onSubmit(){
     console.log(this.dataEntry);
-    if(this.ratedOption =='yes'){
+    if(this.ratedOptionSelected =='yes'){
       this.dataEntry.rated=true;
     }else{
       this.dataEntry.rated=false;
