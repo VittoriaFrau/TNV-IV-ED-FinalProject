@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 import { MovieData } from 'src/app/models/data.model';
-import { NgForm } from '@angular/forms'
-import { threadId } from 'worker_threads';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-edit',
