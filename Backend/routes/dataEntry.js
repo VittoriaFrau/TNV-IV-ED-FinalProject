@@ -70,6 +70,7 @@ router.put('/:id', function (req, res, next) {
 
 router.delete('/:id', function (req, res, next) {
     const data_id = req.params.id;
+    console.log("inside delete");
 
     DataEntry.destroy({
         where: {
@@ -77,10 +78,10 @@ router.delete('/:id', function (req, res, next) {
         }
     })
         .then( status => res.status(201).json({
-            error: false
+            status
         }))
         .catch(err => res.status(500).json({
-            error: false
+            err
         }));
 });
 

@@ -118,10 +118,12 @@ const deleteEntry = (req, res) => {
       id: entryId
     }
   })
-    .then( res => {
-      return res.status(204).send({});
+    .then( otherName => {
+      console.log("res: ", otherName)
+      return res.status(204).send({otherName});
     })
     .catch(error => {
+      console.log("errore: ", error)
       return res.status(500).send(error);
     })
 };

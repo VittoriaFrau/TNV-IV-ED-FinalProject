@@ -34,7 +34,6 @@ export class DetailsComponent implements OnInit {
     this.dataService.deleteEntry(this.id)
     .subscribe(data => {
       this.router.navigate(['/dashboard']);
-      console.log("deleted: ", data);
     }, (err) => {
       console.log(err);
       this.router.navigate(['/dashboard']);
