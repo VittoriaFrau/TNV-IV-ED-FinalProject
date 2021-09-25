@@ -8,8 +8,12 @@ import { DataService } from './services/data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AddComponent } from './routes/add/add.component';
 import { DetailsComponent } from './routes/details/details.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditComponent } from './routes/edit/edit.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { LoginPageComponent } from './routes/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +22,18 @@ import { EditComponent } from './routes/edit/edit.component';
     AddComponent,
     DetailsComponent,
     EditComponent,
+    HeaderComponent,
+    FooterComponent,
+    LoginComponent,
+    LoginPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
