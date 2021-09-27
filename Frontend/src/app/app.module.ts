@@ -14,6 +14,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { LoginPageComponent } from './routes/login-page/login-page.component';
+import { LoadingPageComponent } from './components/loading-page/loading-page.component';
+import { FilterByGenreComponent } from './routes/filter-by-genre/filter-by-genre.component';
+import { GenrePipePipe } from './pipes/genrePipe/genre-pipe.pipe';
+import { WelcomePageComponent } from './routes/welcome-page/welcome-page.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { LoginPageComponent } from './routes/login-page/login-page.component';
     FooterComponent,
     LoginComponent,
     LoginPageComponent,
+    LoadingPageComponent,
+    FilterByGenreComponent,
+    GenrePipePipe,
+    WelcomePageComponent,
   ],
   imports: [
     BrowserModule,

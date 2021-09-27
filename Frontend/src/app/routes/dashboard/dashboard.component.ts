@@ -18,13 +18,14 @@ export class DashboardComponent implements OnInit {
   }
 
   public movies: MovieData [];
+  moviesDataLoader=false;
 
   getEntries(){
     this.dataService.getData().subscribe( (response : any) => {
       this.movies = response;
+      this.moviesDataLoader=true;
+
     })
-    
-    
   }
 
   goToDetails(id){

@@ -1,4 +1,4 @@
-<div class="container p-5">
+<div class="container p-5" *ngIf="movies">
   <h1 class="text-center mb-5">
     The Net Fish
   </h1>
@@ -31,3 +31,4 @@
   </table>
 </div>
 
+<app-loading-page *ngIf="movies==null" ></app-loading-page>
