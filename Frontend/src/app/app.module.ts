@@ -18,6 +18,7 @@ import { LoadingPageComponent } from './components/loading-page/loading-page.com
 import { FilterByGenreComponent } from './routes/filter-by-genre/filter-by-genre.component';
 import { GenrePipePipe } from './pipes/genrePipe/genre-pipe.pipe';
 import { WelcomePageComponent } from './routes/welcome-page/welcome-page.component';
+import { SortByDateComponent } from './routes/sort-by-date/sort-by-date.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { WelcomePageComponent } from './routes/welcome-page/welcome-page.compone
     FilterByGenreComponent,
     GenrePipePipe,
     WelcomePageComponent,
+    SortByDateComponent,
   ],
   imports: [
     BrowserModule,
