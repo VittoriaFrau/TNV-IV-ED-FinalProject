@@ -8,6 +8,7 @@ import { LoginPageComponent } from './routes/login-page/login-page.component';
 import { FilterByGenreComponent } from './routes/filter-by-genre/filter-by-genre.component';
 import { WelcomePageComponent } from './routes/welcome-page/welcome-page.component';
 import { SortByDateComponent } from './routes/sort-by-date/sort-by-date.component';
+import { MoviesApiComponent } from './routes/movies-api/movies-api.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: "edit/:id", component: EditComponent },
   { path: "login", component: LoginPageComponent},
   { path: "filterByGenre", component: FilterByGenreComponent},
-  { path: "sortByDate", component:SortByDateComponent}
+  { path: "sortByDate", component:SortByDateComponent},
+  { path: "moviesApi", component: MoviesApiComponent}
 ];
 
 @NgModule({

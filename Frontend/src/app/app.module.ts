@@ -19,6 +19,7 @@ import { FilterByGenreComponent } from './routes/filter-by-genre/filter-by-genre
 import { GenrePipePipe } from './pipes/genrePipe/genre-pipe.pipe';
 import { WelcomePageComponent } from './routes/welcome-page/welcome-page.component';
 import { SortByDateComponent } from './routes/sort-by-date/sort-by-date.component';
+import { MoviesApiComponent } from './routes/movies-api/movies-api.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { SortByDateComponent } from './routes/sort-by-date/sort-by-date.componen
     GenrePipePipe,
     WelcomePageComponent,
     SortByDateComponent,
+    MoviesApiComponent,
   ],
   imports: [
     BrowserModule,
